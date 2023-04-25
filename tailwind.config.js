@@ -3,13 +3,14 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     screens: {
-      /*'xs': '480px',
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
-      '3xl': '1920px',*/
+      //The fisrt section is for mobile first reponsiveness while the second is desktop first 
+      'x-small': '480px',
+      'small': '640px',
+      'middle': '768px',
+      'largeg': '1024px',
+      'x-large': '1280px',
+      '2x-large': '1536px',
+      '3x-large': '1920px',
       /*'xs': {'min': '0px', 'max': '480px'},
       'sm': {'min': '640px', 'max': '767px'},
       'md': {'min': '768px', 'max': '1023px'},

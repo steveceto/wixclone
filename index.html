@@ -10,32 +10,32 @@
     </head>
     <body>
         <nav class="grid grid-cols-2 shadow mx-auto p-5 gap-20">
-            <div class="grid-cols-10 ">
+            <div class=" ">
                 <ul class="flex justify-between align-middle items-end" >
                     <img src="image/wixlogo.png" alt="Logo" class=" w-20">
-                    <li class="hover:">Creation</li>
-                    <li>Templates</li>
-                    <li>Business</li>
-                    <li>Resources</li>
-                    <li>More</li>
+                    <li class="lg:hidden">Creation</li>
+                    <li class="lg:hidden">Templates</li>
+                    <li class="lg:hidden">Business</li>
+                    <li class="lg:hidden">Resources</li>
+                    <li class="lg:hidden">More</li>
                 </ul>
             </div>
             <div class="grid-cols-2" >
-                <ul class="flex justify-end gap-5  align-middle items-center" >
+                <ul class="flex justify-end gap-5  align-middle items-center lg:hidden">
                     <li class="iconify" data-icon=""><img src="icon/globe.svg" alt=""></li>   
                     <li class="border-r border-r-gray-700 h-6"></li>       
-                    <a href="http://">Log In</a>
+                    <a href="http://" >Log In</a>
                     <li>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold w-32 h-10 rounded-full">Get Started</button>
+                        <button class="lg:hidden bg-blue-500 hover:bg-blue-700 text-white font-bold w-32 h-10 rounded-full">Get Started</button>
                     </li> 
                 </ul>
             </div>
         </nav>
-        <nav class="grid grid-cols-2 gap-40 py-9 px-16 shadow m-auto md:grid-cols-1">
+        <nav class="grid grid-cols-2 2x-large:gap-32 py-9 px-16 shadow m-auto lg:gap-0 lg:grid-cols-1 lg:px-10">
             <div class="flex justify-between">
-                <h1 class="text-3xl font-bold md:text-xl">Pick the Website Template You Love</h>
+                <h1 class="text-3xl font-bold lg:text-2xl md:text-xl sm:text-lg xs:text-base">Pick the Website Template You Love</h>
             </div>
-            <div class="flex justify-end items-center align-middle md:hidden">
+            <div class="flex justify-end items-center align-middle lg:hidden">
                 <div class="grid grid-cols-2 gap-10 py-3 border-b border-b-black">
                     <div><p class="font-extralight text-sm">Search all templates....</p></div>
                     <div class="flex justify-end"><img src="icon/search.svg" alt="" class="w-4 h-4"></div>
@@ -43,7 +43,7 @@
             </div>
         </nav>
         <hr class="fill-transparent w-full">
-        <nav class="grid grid-cols-2 gap-60 px-16 py-5 shadow m-auto sticky top-0 bg-white md:hiidden">
+        <nav class="grid grid-cols-2 gap-60 px-16 py-5 shadow m-auto sticky top-0 bg-white lg:hidden">
             <div class="">
                 <ul class="flex justify-between">
                     <li class="text-sm text-opacity-5">Business & Services</li>
@@ -63,15 +63,18 @@
                 </ul>
             </div>
         </nav>
+        <nav class="flex justify-start x-large:hidden py-5 shadow px-10">
+            <h1>Browse Categories &nbsp;&gt;</h1>
+        </nav>
 
         <!--This is the body-->
 
-        <main class="py-9 px-16 bg-gray-100">
-            <section class="grid grid-cols-2 ">
-                <h1 class="flex justify-start"><strong>All Website Templates</strong></h1>
-                <h1 class="flex justify-end">Sort by: <strong> &nbsp Recommended</strong></h1>
+        <main class="py-9 px-16 bg-gray-100 xs:px-8">
+            <section class="grid grid-cols-2 xs:py-2">
+                <h1 class="flex justify-start sm:text-sm sm:flex-wrap"><strong>All Website Templates</strong></h1>
+                <h1 class="flex justify-end sm:text-sm sm:flex-wrap">Sort by:&nbsp;<strong>Recommended</strong></h1>
             </section>
-            <section class="grid grid-cols-3 gap-20 py-4 md:grid-cols-2 md:py-1 sm:grid-cols-1">
+            <section class="grid grid-cols-3 gap-20 py-4 md:grid-cols-2 md:gap-10 md:py-1 xs:grid-cols-4 xs:text-sm">
                 <div>
                     <img src="image/mainImages/Screenshot1.png" alt="Coming Soon Landing Page">
                     <figcaption class="py-3 md:py-2">Coming Soon Landing Page</figcaption>
@@ -123,21 +126,34 @@
             </section>
 
             <section class="flex justify-center py-20">
-                <h1 class="text-2xl"><span class="font-thin">&lt;&lt; &nbsp;  &lt; 1</span>  &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; 5 &nbsp; ... &nbsp; 73 &nbsp; &gt; &nbsp; &gt;&gt;</h1>
+                <h1 class="text-2xl md:text-xl sm:text-lg"><span class="font-thin">&lt;&lt; &nbsp;  &lt; 1</span>  &nbsp; 2 &nbsp; 3 &nbsp; 4 &nbsp; ... &nbsp; 73 &nbsp; &gt; &nbsp; &gt;&gt;</h1>
             </section>
             
         </main>
 
-        <section class=" mx-auto text-center py-32 text-white bg-green-900">
-            <h1 class="text-6xl">Want Help Picking a Template?</h1>
-            <h6 class="text-lg py-8">Get tips for finding the template that&apos;s right for you.</h6>
-            <button class="bg-white hover:bg-green-100 text-green-800 font-normal text-lg rounded-full py-3 px-10">
+        <section class=" mx-auto text-center py-32 text-white bg-green-900 md:py-20">
+            <h1 class="text-6xl md:text-3xl sm:text-lg lg:text-5xl">Want Help Picking a Template?</h1>
+            <h6 class="text-lg py-8 md:text-base sm:text-xs px-3">Get tips for finding the template that&apos;s right for you.</h6>
+            <button class="bg-white hover:bg-green-100 text-green-800 font-normal text-lg rounded-full py-3 px-10 md:px-6 sm:px-3">
                 Help Me Choose
               </button>                  
         </section>
 
-        <footer class="px-10 py-20 grid grid-cols-6 font-light">
-            <ul class="space-y-4">
+        <footer class="px-10 py-20 grid grid-cols-6 font-light lg:flex  lg:flex-wrap-reverse ">
+            <div class="space-y-4 lg:hidden">
+                <p class="font-bold">Product</p>
+                <ul class="space-y-4">
+                    <li>Website Builder</li>
+                    <li>Website Design</li>
+                    <li>Wix Feature</li>
+                    <li>App Market</li>
+                    <li>Web Hosting</li>
+                    <li>Domain Names</li>
+                    <li>Website Accessibility</li>
+                    <li>Mobile App Builder</li>
+                </ul>
+            </div>
+            <ul class="space-y-4 lg:hidden">
                 <li class="font-bold">Product</li>
                 <li>Website Builder</li>
                 <li>Website Design</li>
@@ -148,7 +164,7 @@
                 <li>Website Accessibility</li>
                 <li>Mobile App Builder</li>
             </ul>
-            <ul class="space-y-4">
+            <ul class="space-y-4 lg:hidden">
                 <li class="font-bold">Product</li>
                 <li>Website Builder</li>
                 <li>Website Design</li>
@@ -159,7 +175,7 @@
                 <li>Website Accessibility</li>
                 <li>Mobile App Builder</li>
             </ul>
-            <ul class="space-y-4">
+            <ul class="space-y-4 lg:hidden">
                 <li class="font-bold">Product</li>
                 <li>Website Builder</li>
                 <li>Website Design</li>
@@ -170,7 +186,7 @@
                 <li>Website Accessibility</li>
                 <li>Mobile App Builder</li>
             </ul>
-            <ul class="space-y-4">
+            <ul class="space-y-4 lg:hidden">
                 <li class="font-bold">Product</li>
                 <li>Website Builder</li>
                 <li>Website Design</li>
@@ -181,29 +197,18 @@
                 <li>Website Accessibility</li>
                 <li>Mobile App Builder</li>
             </ul>
-            <ul class="space-y-4">
-                <li class="font-bold">Product</li>
-                <li>Website Builder</li>
-                <li>Website Design</li>
-                <li>Wix Feature</li>
-                <li>App Market</li>
-                <li>Web Hosting</li>
-                <li>Domain Names</li>
-                <li>Website Accessibility</li>
-                <li>Mobile App Builder</li>
-            </ul>
-            <div class="space-y-4">
+            <div class="space-y-4 ">
                 <img src="image/wixlogo.png" alt="footer logo" class="w-20">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at quos quo autem dicta voluptates, vitae est labore totam assumenda nihil neque corrupti consequatur accusantium quisquam fugit, aliquid pariatur? Adipisci!</p>
-                <p class="font-bold">About</p>
-                <p class="font-bold">Contact us</p> 
+                <p><a class="font-bold" href="#">About</a></p>
+                <a class="font-bold" href="#">Contact us</a> 
             </div>
             
             
         </footer>
         <hr class="fill-transparent w-full"> 
-        <div class="grid grid-cols-2 py-5 px-10">
-                <ul class="flex justify-start gap-2 ">
+        <div class="flex flex-wrap-reverse justify-between py-5 px-10">
+                <ul class="flex justify-start gap-2 md:hidden">
                     <li><img src="icon/facebook.svg" alt="facebook"></li>
                     <li><img src="icon/youtube.svg" alt="youtube"></li>
                     <li><img src="icon/instagram.svg" alt="instagram"></li>
@@ -217,6 +222,6 @@
                     <li>Privacy Policy</li>
                     <li>&copy;2006-2003 Wix.com, Inc</li>
                 </ul>
-        </div>
+        </div>          
     </body>
 </html>
